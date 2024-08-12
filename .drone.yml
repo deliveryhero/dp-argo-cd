@@ -1,0 +1,10 @@
+# Just a dummy pipeline while the repository is onboarded.
+
+kind: pipeline
+type: docker
+
+steps:
+  - name: lint
+    image: golangci/golangci-lint:v1.50
+    commands:
+      - sleep 1
